@@ -10,7 +10,8 @@ export const PostScreen=({})=>{
 
 
 PostScreen.navigationOptions={
-    headerTitle:'Пост'
+    headerTitle:'Пост',
+   
 }
 
 const styles= StyleSheet.create({
