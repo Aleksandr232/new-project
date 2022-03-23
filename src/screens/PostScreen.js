@@ -4,10 +4,14 @@ import { View, Text, StyleSheet } from "react-native";
 
 export const PostScreen=({})=>{
     return<View style={styles.center}>
-        <Text>MainScreen</Text>
+        <Text>PostScreen</Text>
     </View>
 }
 
+
+PostScreen.navigationOptions={
+    headerTitle:'Пост'
+}
 
 const styles= StyleSheet.create({
     center:{
