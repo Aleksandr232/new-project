@@ -1,10 +1,10 @@
 import React from 'react'
 import { View, Text, StyleSheet } from 'react-native'
 
-export const CreateScreen = ({}) => {
+export const BookedScreen = ({}) => {
   return (
     <View style={styles.center}>
-      <Text>CreateScreen</Text>
+      <Text>BookedScreen</Text>
     </View>
   )
 }
