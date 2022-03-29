@@ -4,10 +4,11 @@ import { HeaderButtons, Item } from 'react-navigation-header-buttons'
 import { DATA } from '../data'
 import { Post } from '../components/Post'
 import { AppHeaderIcon } from '../components/AppHeaderIcon'
+import { CreateScreen } from './CreateScreen'
 
 export const MainScreen = ({ navigation }) => {
   const openPostHandler = post => {
-    navigation.navigate('Post', { postId: post.id, date: post.date, booked: post.booked })
+    navigation.navigate('Post', { postId: post.id, edu: post.edu, booked: post.booked })
   }
 
   return (
@@ -22,7 +23,7 @@ export const MainScreen = ({ navigation }) => {
 }
 
 MainScreen.navigationOptions = {
-  headerTitle: 'Мой блог',
+  headerTitle: 'Научные дисциплины',
   headerRight: (
     <HeaderButtons HeaderButtonComponent={AppHeaderIcon}>
       <Item
@@ -37,7 +38,7 @@ MainScreen.navigationOptions = {
       <Item
       title='Toggle Drawer'
       iconName='ios-menu'
-      onPress={() => console.log('Press photo')}
+      onPress={(<CreateScreen/>)}
       />
     </HeaderButtons>
   )

@@ -53,11 +53,11 @@ export const PostScreen = ({ navigation }) => {
 }
 
 PostScreen.navigationOptions = ({ navigation }) => {
-  const date = navigation.getParam('date')
+  const edu = navigation.getParam('edu')
   const booked = navigation.getParam('booked')
   const iconName='ios-star'
   return {
-    headerTitle: 'Пост от ' + new Date(date).toLocaleDateString(),
+    headerTitle:(edu),
     headerRight: (
       <HeaderButtons HeaderButtonComponent={AppHeaderIcon}>
         <Item
